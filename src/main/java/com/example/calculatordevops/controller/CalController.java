@@ -13,15 +13,16 @@ import java.util.Map;
 public class CalController {
     private static final Logger logger = LogManager.getLogger("CalController");
 
-    @RequestMapping("/hello")
-    String hello() {
-        return "Hello Divyesh, Spring Boot!";
-    }
-
     @RequestMapping(value = "/getSqrt", method = RequestMethod.POST)
     public double getSqrt(@RequestBody Map<String,String> body){
 
         double input1 = Double.parseDouble(body.get("input1"));
+
+        if (input1 < 0 ) {
+            logger.info("[SQRT] - INPUT:" + input1 + " , OUTPUT:" + "Invalid Input");
+
+            return -1;
+        }
 
         double res = Math.sqrt(input1) ;
 
@@ -32,7 +33,14 @@ public class CalController {
 
     @RequestMapping(value = "/getFact",method = RequestMethod.POST)
     public double getFact(@RequestBody Map<String,String> body){
+
         double input1 = Double.parseDouble( body.get("input1"));
+
+        if (input1 < 0 ) {
+            logger.info("[FACT] - INPUT:" + input1 + " , OUTPUT:" + "Invalid Input");
+
+            return -1;
+        }
 
         double res= 1;
 
@@ -48,6 +56,12 @@ public class CalController {
     public double getLog(@RequestBody Map<String,String> body){
 
         double input1 = Double.parseDouble(body.get("input1"));
+
+        if (input1 < 0 ) {
+            logger.info("[LOG] - INPUT:" + input1 + " , OUTPUT:" + "Invalid Input");
+
+            return -1;
+        }
 
         double res = Math.log(input1);
 

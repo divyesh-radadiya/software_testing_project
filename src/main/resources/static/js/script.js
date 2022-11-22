@@ -15,8 +15,8 @@ function display2(value) {
 }
 
 
-// var base="http://localhost:8081";
-var base="http://172.16.134.139:8081";
+var base="http://localhost:8081";
+// var base="http://172.16.134.139:8081";
 
 function calculatePower() {
     const p = document.getElementById("result").value;
