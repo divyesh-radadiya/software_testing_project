@@ -1,4 +1,4 @@
-package com.example.calculatordevops.controller;
+package com.example.SoftwareTestingProject.controller;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

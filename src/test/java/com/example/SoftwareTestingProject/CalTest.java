@@ -1,6 +1,6 @@
-package com.example.calculatordevops;
+package com.example.SoftwareTestingProject;
 
-import com.example.calculatordevops.controller.CalController;
+import com.example.SoftwareTestingProject.controller.CalController;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.HashMap;

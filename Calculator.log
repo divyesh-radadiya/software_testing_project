@@ -29,3 +29,6 @@
 16/Apr/2022:18:28:19 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:2.0 , OUTPUT:2.0
 16/Apr/2022:18:28:19 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:2.0 , OUTPUT:2.0
 16/Apr/2022:18:28:21 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:24.0 , OUTPUT:6.204484017332394E23
+20/Nov/2022:13:21:54 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:2.0 , OUTPUT:1.4142135623730951
+22/Nov/2022:14:16:35 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:2.0 , OUTPUT:1.4142135623730951
+22/Nov/2022:14:21:03 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:6.0 , OUTPUT:2.449489742783178
