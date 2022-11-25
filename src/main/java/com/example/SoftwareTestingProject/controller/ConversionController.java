@@ -20,9 +20,9 @@ public class ConversionController {
 
         double length = Double.parseDouble( body.get("length"));
 
-        String from = body.get("from"); // km,m,cm,mm,mile,yard,foot,inch
+        String from = body.get("from"); // m,mile,yard,foot,inch
 
-        String to = body.get("to"); // km,m,cm,mm,mile,yard,foot,inch
+        String to = body.get("to"); // m,mile,yard,foot,inch
 
         double ans=0.0;
 
@@ -37,15 +37,6 @@ public class ConversionController {
                 switch(to) {
                     case "m":
                         ans=length;
-                        break;
-                    case "km":
-                        ans=length * 0.001 ;
-                        break;
-                    case "cm":
-                        ans=length * 100;
-                        break;
-                    case "mm":
-                        ans=length * 1000;
                         break;
                     case "mile":
                         ans=length * 0.0006213689;
@@ -65,115 +56,10 @@ public class ConversionController {
                         return -1;
                 }
                 break;
-            case "km":
-                switch(to) {
-                    case "m":
-                        ans=length * 1000;
-                        break;
-                    case "km":
-                        ans=length * 1 ;
-                        break;
-                    case "cm":
-                        ans=length * 100000;
-                        break;
-                    case "mm":
-                        ans=length * 1000000;
-                        break;
-                    case "mile":
-                        ans=length * 0.6213688756;
-                        break;
-                    case "yard":
-                        ans=length * 1093.6132983;
-                        break;
-                    case "foot":
-                        ans=length * 3280.839895;
-                        break;
-                    case "inch":
-                        ans=length * 39370.07874;
-                        break;
-                    default:
-                        logger.info("[Length] - INPUT:" +length+"^"+from+"^"+to+ " , OUTPUT:" + "Invalid Input");
-
-                        return -1;
-                }
-                break;
-            case "cm":
-                switch(to) {
-                    case "m":
-                        ans=length * 0.01;
-                        break;
-                    case "km":
-                        ans=length * 0.00001 ;
-                        break;
-                    case "cm":
-                        ans=length * 1;
-                        break;
-                    case "mm":
-                        ans=length * 10;
-                        break;
-                    case "mile":
-                        ans=length * 0.0000062137;
-                        break;
-                    case "yard":
-                        ans=length * 0.010936133;
-                        break;
-                    case "foot":
-                        ans=length * 0.032808399;
-                        break;
-                    case "inch":
-                        ans=length * 0.3937007874;
-                        break;
-                    default:
-                        logger.info("[Length] - INPUT:" +length+"^"+from+"^"+to+ " , OUTPUT:" + "Invalid Input");
-
-                        return -1;
-                }
-                break;
-            case "mm":
-                switch(to) {
-                    case "m":
-                        ans=length * 0.001;
-                        break;
-                    case "km":
-                        ans=length * 0.000001 ;
-                        break;
-                    case "cm":
-                        ans=length * 0.1;
-                        break;
-                    case "mm":
-                        ans=length * 1;
-                        break;
-                    case "mile":
-                        ans=length * 0.6213688756*0.0000001;
-                        break;
-                    case "yard":
-                        ans=length * 0.0010936133;
-                        break;
-                    case "foot":
-                        ans=length * 0.0032808399;
-                        break;
-                    case "inch":
-                        ans=length * 0.0393700787;
-                        break;
-                    default:
-                        logger.info("[Length] - INPUT:" +length+"^"+from+"^"+to+ " , OUTPUT:" + "Invalid Input");
-
-                        return -1;
-                }
-                break;
             case "mile":
                 switch(to) {
                     case "m":
                         ans=length * 1609.35;
-                        break;
-                    case "km":
-                        ans=length * 1.60935 ;
-                        break;
-                    case "cm":
-                        ans=length * 160935;
-                        break;
-                    case "mm":
-                        ans=length * 1609350;
                         break;
                     case "mile":
                         ans=length * 1;
@@ -198,15 +84,6 @@ public class ConversionController {
                     case "m":
                         ans=length * 0.9144;
                         break;
-                    case "km":
-                        ans=length * 0.0009144 ;
-                        break;
-                    case "cm":
-                        ans=length * 91.44;
-                        break;
-                    case "mm":
-                        ans=length * 914.4;
-                        break;
                     case "mile":
                         ans=length * 0.0005681797;
                         break;
@@ -230,15 +107,6 @@ public class ConversionController {
                     case "m":
                         ans=length * 0.3048;
                         break;
-                    case "km":
-                        ans=length * 0.0003048 ;
-                        break;
-                    case "cm":
-                        ans=length * 30.48;
-                        break;
-                    case "mm":
-                        ans=length * 304.8;
-                        break;
                     case "mile":
                         ans=length * 0.0001893932;
                         break;
@@ -261,15 +129,6 @@ public class ConversionController {
                 switch(to) {
                     case "m":
                         ans=length * 0.0254;
-                        break;
-                    case "km":
-                        ans=length * 0.0000254;
-                        break;
-                    case "cm":
-                        ans=length * 2.54;
-                        break;
-                    case "mm":
-                        ans=length * 25.4;
                         break;
                     case "mile":
                         ans=length * 0.0000157828;
