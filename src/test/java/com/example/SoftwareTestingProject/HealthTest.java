@@ -32,7 +32,7 @@ public class HealthTest {
 
         Map<String,String> body4 = new HashMap();
         body4.put("height", "180");
-        body4.put("weight", "60");
+        body4.put("weight", "58");
         String ans4="Mild Thinness";
 
         Map<String,String> body5 = new HashMap();
@@ -80,28 +80,28 @@ public class HealthTest {
         body3.put("weight", "55");
         body3.put("age", "18");
         body3.put("gender", "male");
-        double ans3=-1;
+        double ans3=36.032716049382714;
 
         Map<String,String> body4 = new HashMap();
         body4.put("height", "180");
         body4.put("weight", "60");
         body4.put("age", "10");
         body4.put("gender", "male");
-        double ans4=-1;
+        double ans4=8.322222222222223;
 
         Map<String,String> body5 = new HashMap();
         body5.put("height", "180");
         body5.put("weight", "65");
         body5.put("age", "18");
         body5.put("gender", "female");
-        double ans5=-1;
+        double ans5=41.49320987654321;
 
         Map<String,String> body6 = new HashMap();
         body6.put("height", "180");
         body6.put("weight", "85");
         body6.put("age", "10");
         body6.put("gender", "female");
-        double ans6=-1;
+        double ans6=28.38148148148148;
 
         Assert.assertEquals("BFP for True Positive", ans1, healthController.getBFP(body1), DELTA);
         Assert.assertEquals("BFP for True Positive", ans2, healthController.getBFP(body2), DELTA);
@@ -132,14 +132,14 @@ public class HealthTest {
         body3.put("weight", "55");
         body3.put("age", "18");
         body3.put("gender", "male");
-        double ans3=-1;
+        double ans3=1590.0;
 
         Map<String,String> body4 = new HashMap();
         body4.put("height", "160");
         body4.put("weight", "60");
         body4.put("age", "20");
         body4.put("gender", "female");
-        double ans4=-1;
+        double ans4=1339.0;
 
 
         Assert.assertEquals("BMR for True Positive", ans1, healthController.getBMR(body1), DELTA);
@@ -166,25 +166,25 @@ public class HealthTest {
         body3.put("height", "140");
         body3.put("age", "18");
         body3.put("gender", "male");
-        double ans3=-1;
+        double ans3=34.35999999999999;
 
         Map<String,String> body4 = new HashMap();
         body4.put("height", "180");
         body4.put("age", "10");
         body4.put("gender", "male");
-        double ans4=-1;
+        double ans4=78.36;
 
         Map<String,String> body5 = new HashMap();
         body5.put("height", "140");
         body5.put("age", "18");
         body5.put("gender", "female");
-        double ans5=-1;
+        double ans5=31.359999999999992;
 
         Map<String,String> body6 = new HashMap();
         body6.put("height", "180");
         body6.put("age", "10");
         body6.put("gender", "female");
-        double ans6=-1;
+        double ans6=75.36;
 
         Assert.assertEquals("IdealWeight for True Positive", ans1, healthController.getIdealWeight(body1), DELTA);
         Assert.assertEquals("IdealWeight for True Positive", ans2, healthController.getIdealWeight(body2), DELTA);
@@ -215,14 +215,14 @@ public class HealthTest {
         body3.put("weight", "55");
         body3.put("age", "18");
         body3.put("gender", "male");
-        double ans3=-1;
+        double ans3=51.24499999999999;
 
         Map<String,String> body4 = new HashMap();
         body4.put("height", "160");
         body4.put("weight", "60");
         body4.put("age", "20");
         body4.put("gender", "female");
-        double ans4=-1;
+        double ans4=42.5;
 
         Assert.assertEquals("LBM for True Positive", ans1, healthController.getLBM(body1), DELTA);
         Assert.assertEquals("LBM for True Positive", ans2, healthController.getLBM(body2), DELTA);
@@ -240,7 +240,7 @@ public class HealthTest {
         Map<String,String> body2 = new HashMap();
         body2.put("height", "180");
         body2.put("weight", "40");
-        double ans2=-1;
+        double ans2=1.4142418466443427;
 
         Assert.assertEquals("BSA for True Positive", ans1, healthController.getBSA(body1), DELTA);
         Assert.assertEquals("BSA for True Positive", ans2, healthController.getBSA(body2), DELTA);

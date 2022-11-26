@@ -32,3 +32,30 @@
 20/Nov/2022:13:21:54 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:2.0 , OUTPUT:1.4142135623730951
 22/Nov/2022:14:16:35 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:2.0 , OUTPUT:1.4142135623730951
 22/Nov/2022:14:21:03 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:6.0 , OUTPUT:2.449489742783178
+26/Nov/2022:13:28:45 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:-6.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:28:45 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:2.0 , OUTPUT:2.0
+26/Nov/2022:13:28:45 +0530 [CalController.java] [INFO] CalController [LOG] - INPUT:1.0 , OUTPUT:0.0
+26/Nov/2022:13:28:45 +0530 [CalController.java] [INFO] CalController [POWER] - INPUT:10.0^2.0 , OUTPUT:100.0
+26/Nov/2022:13:28:45 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:-1.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:28:45 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:25.0 , OUTPUT:5.0
+26/Nov/2022:13:28:55 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:-6.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:28:55 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:2.0 , OUTPUT:2.0
+26/Nov/2022:13:28:55 +0530 [CalController.java] [INFO] CalController [LOG] - INPUT:1.0 , OUTPUT:0.0
+26/Nov/2022:13:28:55 +0530 [CalController.java] [INFO] CalController [POWER] - INPUT:10.0^2.0 , OUTPUT:100.0
+26/Nov/2022:13:28:55 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:-1.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:28:55 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:25.0 , OUTPUT:5.0
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:-6.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:2.0 , OUTPUT:2.0
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [LOG] - INPUT:-1.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [LOG] - INPUT:50.0 , OUTPUT:3.912023005428146
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [POWER] - INPUT:10.0^2.0 , OUTPUT:100.0
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:-1.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:30:48 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:25.0 , OUTPUT:5.0
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:-6.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:1.0 , OUTPUT:1.0
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [FACT] - INPUT:2.0 , OUTPUT:2.0
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [LOG] - INPUT:-1.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [LOG] - INPUT:50.0 , OUTPUT:3.912023005428146
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [POWER] - INPUT:10.0^2.0 , OUTPUT:100.0
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:-1.0 , OUTPUT:Invalid Input
+26/Nov/2022:13:31:21 +0530 [CalController.java] [INFO] CalController [SQRT] - INPUT:25.0 , OUTPUT:5.0

@@ -37,7 +37,7 @@ public class CalTest {
         double ans2=1;
 
         Map<String,String> body3 = new HashMap();
-        body2.put("input1","2");
+        body3.put("input1","2");
         double ans3=2;
 
         Assert.assertEquals("Factorial of number for True Positive", ans1, calculator.getFact(body1), DELTA);
@@ -49,7 +49,7 @@ public class CalTest {
     @Test
     public void log(){
         Map<String,String> body1 = new HashMap();
-        body1.put("input1", "1");
+        body1.put("input1", "-1");
         double ans1=-1;
 
         Map<String,String> body2 = new HashMap();

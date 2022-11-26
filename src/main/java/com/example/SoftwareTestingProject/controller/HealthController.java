@@ -36,7 +36,7 @@ public class HealthController {
         if (bmi < 16) {
             bmiIndex="Severe Thinness";
         }
-        else if (bmi < 16.9 && bmi >= 16) {
+        else if (bmi < 16.99999999 && bmi >= 16) {
             bmiIndex="Moderate Thinness";
         }
         else if (bmi < 18.4 && bmi >= 17) {
@@ -254,7 +254,7 @@ public class HealthController {
         double weight = Double.parseDouble( body.get("weight")); //kgs
 
         if (height < 0 || weight < 0 ) {
-            logger.info("[LBM] - INPUT:" +height+"^"+weight+ ", OUTPUT:" + "Invalid Input");
+            logger.info("[BSA] - INPUT:" +height+"^"+weight+ ", OUTPUT:" + "Invalid Input");
 
             return -1;
         }

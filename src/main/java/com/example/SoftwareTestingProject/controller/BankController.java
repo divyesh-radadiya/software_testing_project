@@ -88,15 +88,15 @@ public class BankController {
             return -1;
         }
 
-        double convertedRateOfInterest = interestRate / (12 * 100);
+        double convertedRateOfInterest = interestRate / (12.0 * 100);
 
         double interest = 0;
 
         if(compound=="monthly") {
-            interest=amount * (Math.pow((1 + convertedRateOfInterest / 100), term)) - amount;
+            interest=amount * (Math.pow((1 + convertedRateOfInterest / 100.0), term)) - amount;
         }
         else  if(compound=="annually") {
-            interest=amount * (Math.pow((1 + interestRate / 100), term/12)) - amount;
+            interest=amount * (Math.pow((1 + interestRate / 100.0), term/12.0)) - amount;
         }
         else {
             logger.info("[CompoundInterest] - INPUT:" +amount+"^"+term+"^"+interestRate+ "^"+compound+ " , OUTPUT:" + "Invalid Input");
@@ -239,7 +239,7 @@ public class BankController {
         int age = Integer.parseInt(body.get("age"));// years
 
         if (amount < 0 || term < 0 || age < 0) {
-            logger.info("[FDInterest] - INPUT:" +amount+"^"+term+"^"+age+ " , OUTPUT:" + "Invalid Input");
+            logger.info("[RDInterest] - INPUT:" +amount+"^"+term+"^"+age+ " , OUTPUT:" + "Invalid Input");
 
             return -1;
         }
@@ -252,27 +252,27 @@ public class BankController {
 
 
         if (term >= 0 && term <= 6) {
-            interestRate1 = .0750;
+            interestRate1 =0.0750;
             interestRate2 = 0.080;
         }
         else if (term >= 7 && term <= 9) {
-            interestRate1 = .0775;
+            interestRate1 = 0.0775;
             interestRate2 = 0.0825;
         }
         else if (term >= 10 && term <= 12) {
-            interestRate1 = .0800;
+            interestRate1 = 0.0800;
             interestRate2 = 0.0850;
         }
         else if (term >= 13 && term <= 15) {
-            interestRate1 = .0825;
+            interestRate1 = 0.0825;
             interestRate2 = 0.0875;
         }
         else if (term >= 16 && term <= 18) {
-            interestRate1 = .0850;
+            interestRate1 = 0.0850;
             interestRate2 = 0.0900;
         }
-        else if (term >= 22) {
-            interestRate1 = .0875;
+        else if (term <= 22) {
+            interestRate1 = 0.0875;
             interestRate2 = 0.0925;
         }
 
@@ -285,7 +285,7 @@ public class BankController {
 
         interest= interestRate * amount ;
 
-        logger.info("[EMI] - INPUT:" +amount+"^"+term+"^"+age+ " , OUTPUT:" + interest);
+        logger.info("[RDInterest] - INPUT:" +amount+"^"+term+"^"+age+ " , OUTPUT:" + interest);
 
         return interest  ;
     }
